@@ -21,9 +21,11 @@
 
 ## Try it now
 
+**No install required.** Run instantly on any machine:
+
 ```bash
 npx sigmap
-sigmap ask "Where is auth handled?"
+npx sigmap ask "Where is auth handled?"
 ```
 
 Zero config. Zero dependencies. Under 10 seconds.
