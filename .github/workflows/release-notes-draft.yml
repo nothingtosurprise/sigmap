@@ -31,7 +31,7 @@ jobs:
 
       - name: Validate version in CHANGELOG
         run: |
-          CHANGELOG_VERSION=$(grep -m 1 '## \[' CHANGELOG.md | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' || echo "")
+          CHANGELOG_VERSION=$(grep -m 1 '## \[[0-9]' CHANGELOG.md | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' || echo "")
           PACKAGE_VERSION="${{ steps.version.outputs.version }}"
 
           if [ -z "$CHANGELOG_VERSION" ]; then
